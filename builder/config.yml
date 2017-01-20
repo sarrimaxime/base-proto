@@ -1,0 +1,22 @@
+src: ./src/
+site: ./app/
+
+browserSync:
+    css: true
+    js: true
+
+# ---o Compile scripts to one single file
+scripts: 
+    -
+        src: index.js
+        folder: /
+        dest: js/
+        filename: scripts.js
+
+# ---o Compile styles to one single file
+styles:
+    -
+        src: index.scss
+        folder: /
+        dest: /css/
+        filename: style.css
